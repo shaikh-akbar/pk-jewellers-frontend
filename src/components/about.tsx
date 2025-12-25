@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import aboutImg from "../../public/assets/shop-img-1.png";
 import { Button } from "../components/ui/button";
 
 export default function About() {
@@ -17,11 +16,11 @@ export default function About() {
             className="w-full lg:w-1/2 relative"
           >
             <div className="relative aspect-[4/5] overflow-hidden">
-              <img 
-                src={aboutImg} 
-                alt="Artisan Craftsmanship" 
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
+             <img 
+  src="/assets/shop-img-1.png" 
+  alt="Artisan Craftsmanship" 
+  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+/>
               <div className="absolute top-0 left-0 w-full h-full border-[1px] border-primary/20 m-4 -z-10" />
             </div>
             

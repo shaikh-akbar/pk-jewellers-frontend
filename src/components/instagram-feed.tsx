@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Instagram, Play } from "lucide-react";
-import interiorImg from "../../public/assets/shop.png";
 
 // Placeholder data for reels
 const reels = [
@@ -42,7 +41,7 @@ export default function InstagramFeed() {
             >
               {/* Using the interior image as a placeholder for all reels to look cohesive for now */}
               <img 
-                src={interiorImg} 
+                 src="/assets/shop.png" 
                 alt="Instagram Reel" 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />

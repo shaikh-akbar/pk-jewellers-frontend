@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
-import heroBg from "../../public/assets/shop-img-2.png";
 
 export default function Hero() {
   return (
@@ -9,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/30 z-10" />
         <img
-          src={heroBg}
+          src="/assets/shop-img-2.png" 
           alt="Luxury Jewellery"
           className="w-full h-full object-cover"
         />
