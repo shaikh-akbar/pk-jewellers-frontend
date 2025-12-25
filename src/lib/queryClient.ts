@@ -1,4 +1,4 @@
-import { QueryClient } from "@tanstack/react-query";
+import { QueryClient, QueryFunctionContext } from "@tanstack/react-query";
 
 async function throwIfResNotOk(res: Response) {
   if (!res.ok) {
@@ -27,8 +27,11 @@ type UnauthorizedBehavior = "returnNull" | "throw";
 
 export const getQueryFn =
   <T>({ on401: unauthorizedBehavior }: { on401: UnauthorizedBehavior }) =>
-  async ({ queryKey }: { queryKey: string[] }): Promise<T | null> => {
-    const res = await fetch(queryKey.join("/") as string, {
+  async (context: QueryFunctionContext): Promise<T | null> => {
+    // Use context.queryKey (readonly unknown[]) – cast safely if needed
+    const url = (context.queryKey as string[]).join("/");
+
+    const res = await fetch(url, {
       credentials: "include",
     });
 
@@ -37,13 +40,14 @@ export const getQueryFn =
     }
 
     await throwIfResNotOk(res);
-    return await res.json();
+    return await res.json() as T;
   };
 
 export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      queryFn: getQueryFn({ on401: "throw" }),
+      // Use a generic-aware default queryFn – cast to any to satisfy the broad type
+      queryFn: getQueryFn({ on401: "throw" }) as any,
       refetchInterval: false,
       refetchOnWindowFocus: false,
       staleTime: Infinity,
