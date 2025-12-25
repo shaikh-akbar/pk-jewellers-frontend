@@ -12,9 +12,11 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="space-y-6">
-            <a href="/" className="text-2xl font-serif font-bold tracking-widest text-primary block">
-              PK<span className="text-foreground">JEWELLERY</span>
-            </a>
+             <img
+              src="/assets/logo-1.png"
+              alt="PK Jewellers Logo"
+              className="h-14 w-auto" 
+            />
             <p className="text-muted-foreground leading-relaxed">
               Timeless designs, certified purity, and a legacy of trust. We craft jewelry that becomes a part of your family's history.
             </p>
@@ -78,7 +80,7 @@ export default function Footer() {
 
         <div className="border-t border-border pt-10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} PK Jewellery. All rights reserved.
+            © {new Date().getFullYear()} P. K.Jewellers Pvt Ltd. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-xs text-muted-foreground hover:text-foreground">Privacy Policy</a>

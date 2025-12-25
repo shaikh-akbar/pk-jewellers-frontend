@@ -26,8 +26,7 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Services", href: "#services" },
     { name: "Contact", href: "#contact" },
-    { name: "Terms", href: "#terms" }
-
+    { name: "Terms", href: "#terms" },
   ];
 
   const scrollToSection = (id: string) => {
@@ -50,9 +49,11 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-6 flex items-center justify-between w-full">
           <Link href="/">
-            <a className="text-2xl font-serif font-bold tracking-widest">
-              PKJEWELLERY
-            </a>
+            <img
+              src="/assets/logo-1.png"
+              alt="PK Jewellers Logo"
+              className="h-14 w-auto" 
+            />
           </Link>
 
           {/* Desktop Menu */}

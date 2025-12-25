@@ -102,6 +102,8 @@ export default function Contact() {
                     Osia paradise Dawood baug lane Off j p road,
                     <br />
                     Andheri West Mumbai - 400058
+                    <br />
+                    P. K.Jewellers Pvt Ltd
                   </p>
                 </div>
               </div>
