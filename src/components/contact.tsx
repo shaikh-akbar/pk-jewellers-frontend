@@ -99,9 +99,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-serif text-xl mb-1">Visit Showroom</h4>
                   <p className="text-primary-foreground/70">
-                    Osia paradise Dawood baug lane Off j p road,
+                    1, Osia Paradise, Near Bombay Bazar, Off J P Road,
                     <br />
-                    Andheri West Mumbai - 400058
+                    Dawood Baug Road, Andheri West, Mumbai-400058, <br/>
+                    Maharashtra
                     <br />
                     P.K.Jewellers Pvt Ltd
                   </p>
