@@ -34,7 +34,7 @@ export default function TermsAndConditions() {
                 1. General
               </h3>
               <p>
-                By accessing and using PK Jewellery’s website, showroom, or
+                By accessing and using P.K.Jewellers Pvt Ltd website, showroom, or
                 services, you agree to be bound by these terms and conditions.
                 These terms apply to all visitors, customers, and users.
               </p>
@@ -69,7 +69,7 @@ export default function TermsAndConditions() {
               </h3>
               <p>
                 Full or partial advance payment may be required for certain
-                orders. PK Jewellery reserves the right to cancel orders if
+                orders. P.K.Jewellers Pvt Ltd reserves the right to cancel orders if
                 payment terms are not fulfilled.
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function TermsAndConditions() {
                 6. Liability
               </h3>
               <p>
-                PK Jewellery shall not be liable for any indirect, incidental, or
+                P.K.Jewellers Pvt Ltd shall not be liable for any indirect, incidental, or
                 consequential damages arising from the use of our products or
                 services.
               </p>

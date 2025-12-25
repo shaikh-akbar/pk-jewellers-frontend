@@ -16,7 +16,7 @@ export default function InstagramFeed() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-12">
           <div>
             <span className="text-primary text-sm font-bold tracking-widest uppercase mb-2 block">Follow Us</span>
-            <h2 className="text-3xl md:text-4xl font-serif text-foreground">@pkjewellery</h2>
+            <h2 className="text-3xl md:text-4xl font-serif text-foreground">@P.K.Jewellers Pvt Ltd</h2>
           </div>
           <a 
             href="https://instagram.com" 

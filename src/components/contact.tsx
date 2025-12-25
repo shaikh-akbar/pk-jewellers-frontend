@@ -103,7 +103,7 @@ export default function Contact() {
                     <br />
                     Andheri West Mumbai - 400058
                     <br />
-                    P. K.Jewellers Pvt Ltd
+                    P.K.Jewellers Pvt Ltd
                   </p>
                 </div>
               </div>
